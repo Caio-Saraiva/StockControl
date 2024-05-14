@@ -5,6 +5,8 @@ using UnityEngine.Rendering;
 
 public class Settings : MonoBehaviour
 {
+    [SerializeField]
+    private string webLink;
     public void QuitApp()
     {
         Application.Quit();
@@ -12,6 +14,6 @@ public class Settings : MonoBehaviour
 
     public void OpenURL()
     {
-        Application.OpenURL("https://github.com/Caio-Saraiva");
+        Application.OpenURL(webLink);
     }
 }
