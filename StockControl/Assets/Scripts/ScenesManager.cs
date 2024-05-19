@@ -57,4 +57,17 @@ public class ScenesManager : MonoBehaviour
         SceneManager.LoadSceneAsync("SC_Settings");
         SceneManager.UnloadSceneAsync(actualScene);
     }
+
+    public void ToReport()
+    {
+        StartCoroutine(ReportCorutine());
+    }
+
+    IEnumerator ReportCorutine()
+    {
+        int actualScene = SceneManager.GetActiveScene().buildIndex;
+        yield return new WaitForSeconds(changeTime);
+        SceneManager.LoadSceneAsync("SC_Report");
+        SceneManager.UnloadSceneAsync(actualScene);
+    }
 }
