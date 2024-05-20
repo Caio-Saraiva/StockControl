@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class MuteSound : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class MuteSound : MonoBehaviour
         {
             AudioListener.volume = 0;
         }
+
+        PlayerPrefs.SetFloat("LatinhaCost", (float)Math.Round(PlayerPrefs.GetInt("Latinha") * 2.34f, 2));
+        PlayerPrefs.SetFloat("GarrafaCost", (float)Math.Round(PlayerPrefs.GetInt("Garrafa") * 2.34f, 2));
     }
 
     public void Mute()
