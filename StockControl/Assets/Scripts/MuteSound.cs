@@ -20,7 +20,7 @@ public class MuteSound : MonoBehaviour
         }
 
         PlayerPrefs.SetFloat("LatinhaCost", (float)Math.Round(PlayerPrefs.GetInt("Latinha") * 2.34f, 2));
-        PlayerPrefs.SetFloat("GarrafaCost", (float)Math.Round(PlayerPrefs.GetInt("Garrafa") * 2.34f, 2));
+        PlayerPrefs.SetFloat("GarrafaCost", (float)Math.Round(PlayerPrefs.GetInt("Garrafa") * 1.27f, 2));
     }
 
     public void Mute()
