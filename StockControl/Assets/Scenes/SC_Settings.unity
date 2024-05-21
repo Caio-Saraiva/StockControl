@@ -2175,7 +2175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf5b468f3eaab84c846e1fa93fc6543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  webLink: https://github.com/Caio-Saraiva/MyInventory
+  webLink: https://github.com/Caio-Saraiva/StockControl
 --- !u!114 &1883786078
 MonoBehaviour:
   m_ObjectHideFlags: 0
